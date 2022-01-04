@@ -6,22 +6,15 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - name: set up job
-            - uses: actions/checkout@v2
-            - uses: actions/setup-node@v2
-            with:
-            node_version: 16
-            - run: npm ci
-            - name: run eslint
-            - run: npx eslint ./src/*
+              uses: actions/checkout@v2
 
-    test:
-        runs-on: ubuntu-latest
-        steps:
-            - name: set up job
-            - uses: actions/checkout@v2
-            - uses: actions/setup-node@v2
-            with:
-             node_version: 16
-            -  run: npm ci
-            - name: run unit tests
-            - run: npm test --passWithNoTests
+            - name: set up node
+              uses: actions/setup-node@v2
+              with:
+                node_version: 16
+
+            - name: install dependencies
+              run: npm ci
+
+            - name: run eslint
+              run: npx eslint ./src/*

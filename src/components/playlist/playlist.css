@@ -1,0 +1,48 @@
+.playlist {
+    margin-bottom: 50px;
+}
+
+.playlist-headline {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 15px;
+}
+
+.video {
+    overflow: hidden;
+    border-radius: 15px;
+    position: relative;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.video-thumbnail-image {
+    width: 100%;
+    height: auto;
+}
+
+.video-controls {
+    flex-direction: column;
+    margin-bottom: auto;
+    position: absolute;
+    padding: 25px;
+    display: flex;
+    color: white;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    top: 0;
+}
+
+.video-author {
+    display: block;
+    margin-top: auto;
+    font-size: 12px;
+    color: #FCFAFE;
+}
+
+.video-title {
+    display: block;
+    color: #FCFAFE;
+    font-size: 14px;
+    font-weight: 500;
+}

@@ -15,7 +15,12 @@
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
+.video:hover .video-thumbnail-image {
+    transform: scale(1.1);
+}
+
 .video-thumbnail-image {
+    transition: transform .2s ease;
     width: 100%;
     height: auto;
 }
